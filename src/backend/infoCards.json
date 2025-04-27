@@ -1,0 +1,85 @@
+{
+    "infoCards": {
+      "buying": [
+        {
+          "title": "Get estimated property prices with a realEstimate™",
+          "description": "See how much your property's worth whether you own it or want to buy it.",
+          "link": "Check property values",
+          "image": "https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/track-property-01a613a84bcb76e1d81a.svg"
+        },
+        {
+          "title": "Need help with a mortgage?",
+          "description": "Compare your finance options to make an informed call.",
+          "link": "Explore home loans",
+          "image": "https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/homeloan-efc3156fa5f2500721bb.svg"
+        },
+        {
+          "title": "Explore suburb profiles",
+          "description": "Check out different suburb profiles and find one that's right for you.",
+          "link": "Research suburbs",
+          "image": "https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/explore-7199e53bea679164ae8c.svg"
+        }
+      ],
+      "renting": [
+        {
+          "title": "Set up your renter profile",
+          "description": "Are you a tenant looking for a new place? Get yourself ready to apply online.",
+          "link": "Create a profile",
+          "image": "https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/rent-0c281ca2c4fd59e5c6c1.svg"
+        },
+        {
+          "title": "Find a tenant",
+          "description": "List your property for rent through an agent or on your own.",
+          "link": "Advertise your rental property",
+          "image": "https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/tenant-e46b9a651e0a1c8333c5.svg"
+        },
+        {
+          "title": "Looking for a flatmate?",
+          "description": "Move into a new sharehouse, or find someone to join yours.",
+          "link": "Head to flatmate.com.au",
+          "image": "https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/flatmates-59461f89c0c37b4dfbea.svg"
+        }
+      ],
+      "selling": [
+        {
+          "title": "Check this week's sold prices",
+          "description": "Stay in the loop with the latest clearance rates and recent sales.",
+          "link": "See auction results",
+          "image": "https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/auctions-91338143e9aac7499e49.svg"
+        },
+        {
+          "title": "Decide whether to sell or stay",
+          "description": "Wondering if now's a good time to sell? See your options.",
+          "link": "Read the selling guide",
+          "image": "https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/guides-selling-bba6d8d7803ddc74d7d9.svg"
+        },
+        {
+          "title": "Thinking about refinancing?",
+          "description": "Calculate your equity to weigh up your financial options.",
+          "link": "Use the refinance calculator",
+          "image": "https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/calculators-cbe096b53a44c9dd908e.svg"
+        }
+      ],
+      "researching": [
+        {
+          "title": "Delve into market data",
+          "description": "Stay on top of real estate trends written by economists and property experts.",
+          "link": "Research the property market",
+          "image": "https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/market-5ab100f6b0c6eb37418c.svg"
+        },
+        {
+          "title": "Real estate how to's",
+          "description": "Read up on the ins and outs of any property process.",
+          "link": "Explore property guides",
+          "image": "https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/guides-buying-0bf3e999ca10129baedb.svg"
+        },
+        {
+          "title": "Get your finances in order",
+          "description": "Use our calculators to understand your financial position and options.",
+          "link": "Browse home loan calculators",
+          "image": "https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/calculators-borrow-8f758262c85c796a66c7.svg"
+        }
+      ]
+    }
+  }
+  

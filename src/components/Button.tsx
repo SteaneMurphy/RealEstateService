@@ -37,16 +37,16 @@ const Button: React.FC<ButtonProps> = ({
     return (
         <>
             <StyledButton 
-                fontColor={fontColor} 
+                $fontColor={fontColor} 
                 width={width} 
                 height={height} 
-                padding={padding} 
-                backgroundColor={backgroundColor} 
-                backgroundOnHover={backgroundOnHover}
-                underline={underline ? "underline" : "none"}
-                fontOnHover={fontOnHover}
-                borderRadius={borderRadius}
-                borderUnderline={borderUnderline}
+                $padding={padding} 
+                $backgroundColor={backgroundColor} 
+                $backgroundOnHover={backgroundOnHover}
+                $underline={underline ? "underline" : "none"}
+                $fontOnHover={fontOnHover}
+                $borderRadius={borderRadius}
+                $borderUnderline={borderUnderline}
                 onClick={onClick}
             >
                 {icon}
