@@ -3,12 +3,12 @@ import Search from "./Search.tsx";
 import SearchIcon from "../assets/SearchIcon.tsx";
 
 interface HeroProps{
-    backgroundImage: string;
+    $backgroundImage: string;
 };
 
 export const HeroContainer = styled.div<HeroProps>
 `
-    background-image: url(${(props) => (props.backgroundImage)});
+    background-image: url(${(props) => (props.$backgroundImage)});
     background-size: cover;
     background-position: center;
     width: 55%;

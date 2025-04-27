@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "./Button";
 import Searchbar from "./Searchbar";
 import FilterIcon from "../assets/FilterIcon";
+import { useNavigate } from "react-router-dom";
 
 interface SearchProps{ 
     className?: string;
@@ -18,6 +19,12 @@ const Search = ({ className }: SearchProps) => {
 
     const adjustSearchDisplay = (placeholder: string) => {
         setCurrentPlaceholder(placeholder);
+    };
+
+    const navigate = useNavigate();
+    const searchOnType = (type: string) =>
+    {
+        navigate(`/${type}`);
     };
 
     return (
@@ -107,6 +114,7 @@ const Search = ({ className }: SearchProps) => {
                         width={100}
                         height={50}
                         padding={12}
+                        onClick={() => searchOnType("buy")}
                     />
                 </div>
             </div>

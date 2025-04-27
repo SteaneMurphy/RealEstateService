@@ -1,0 +1,89 @@
+{
+    "footerCategories": {
+        "realestate":
+        {
+            "title": "Real estate in Australia",
+            "links": 
+            [
+                { "text": "Real estate NSW" },
+                { "text": "Real estate VIC" },
+                { "text": "Real estate QLD" },
+                { "text": "Real estate WA" },
+                { "text": "Real estate SA" },
+                { "text": "Real estate TAS" },
+                { "text": "Real estate ACT" },
+                { "text": "Real estate NT" },
+                { "text": "Real estate Sydney" },
+                { "text": "Real estate Melbourne" },
+                { "text": "Real estate Brisbane" },
+                { "text": "Real estate Perth" },
+                { "text": "Real estate Adelaide" },
+                { "text": "Real estate Hobart" },
+                { "text": "Real estate Canberra" },
+                { "text": "Real estate Darwin" }
+            ]
+        },
+        "newhomes":
+        {
+            "title": "Build new homes in Australia",
+            "links": 
+            [
+                { "text": "Home builders" },
+                { "text": "House designs" },
+                { "text": "New apartments" },
+                { "text": "House and land" },
+                { "text": "Land estates" },
+                { "text": "Home builders Melbourne" },
+                { "text": "Home builders Perth" },
+                { "text": "Home builders Sydney" },
+                { "text": "Home builders Brisbane" },
+                { "text": "Home builders Adelaide" },
+                { "text": "House and land packages Melbourne" },
+                { "text": "House and land packages Perth" },
+                { "text": "House and land packages Sydney" },
+                { "text": "House and land packages Brisbane" },
+                { "text": "House and land packages Adelaide" },
+                { "text": "House and land packages Canberra" }
+            ]
+        },
+        "popularareas":
+        {
+            "title": "Browse popular areas in Australia",
+            "links": 
+            [
+                { "text": "Sydney house prices" },
+                { "text": "Perth house prices" },
+                { "text": "Melbourne house prices" },
+                { "text": "Brisbane house prices" },
+                { "text": "Adelaide house prices" },
+                { "text": "Hobart house prices" },
+                { "text": "Canberra house prices" },
+                { "text": "Suburb profiles" }
+            ]
+        },
+        "popularsearches":
+        {
+            "title": "Browse popular property searches",
+            "links": 
+            [
+                { "text": "Property news" },
+                { "text": "Commercial property news" },
+                { "text": "Stamp duty calculator" },
+                { "text": "Mortgage calculator" },
+                { "text": "Capital gains tax Australia" },
+                { "text": "Renovation" },
+                { "text": "Selling property" },
+                { "text": "Negative gearing" },
+                { "text": "How much can I borrow" },
+                { "text": "Property guides" },
+                { "text": "How much is my house worth" },
+                { "text": "The block" },
+                { "text": "Rent to buy" },
+                { "text": "How much does it cost to build a house" },
+                { "text": "Australia housing market" },
+                { "text": "Auction results" }
+            ]
+        }
+    }
+}
+  

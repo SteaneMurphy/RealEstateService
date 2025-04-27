@@ -25,7 +25,7 @@ const Navbar = () => {
                 <Button 
                     buttonName={"Sign in"}
                     backgroundOnHover="#f6f5f7"
-                    width={70}
+                    width={80}
                     height={40}
                     padding={12}
                     borderRadius={8}

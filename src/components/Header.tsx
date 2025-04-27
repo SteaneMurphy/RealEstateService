@@ -4,7 +4,7 @@ import heroImage from "../assets/heroImage.jpg";
 const Header = () => {
 
     return (
-        <HeroContainer backgroundImage={heroImage}>
+        <HeroContainer $backgroundImage={heroImage}>
             <div className="titleContainer">
                 <h1>Properties to call home</h1>
             </div>
