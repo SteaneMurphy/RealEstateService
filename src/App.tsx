@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar.tsx';
-import { infoCardExists, footerCollectionExists } from './backend/FirebaseService.tsx';
+import { infoCardExists, footerCollectionExists, listingDataExists } from './backend/FirebaseService.tsx';
 import Home from './pages/Home.tsx';
 import PropertyListing from './pages/PropertyListing.tsx';
 import Listing from './pages/Listing.tsx';
@@ -14,6 +14,7 @@ function App() {
 
     infoCardExists();
     footerCollectionExists();
+    listingDataExists();
   }, []);
 
   return (
@@ -23,7 +24,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/buy" element={<PropertyListing />} />
-          <Route path="/sell" element={<PropertyListing />} />
+          <Route path="/rent" element={<PropertyListing />} />
+          <Route path="/sold" element={<PropertyListing />} />
           <Route path="/listing" element={<Listing />} />
         </Routes>
       </div>
