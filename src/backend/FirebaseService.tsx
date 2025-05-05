@@ -1,6 +1,7 @@
 import { doc, getDoc, addDoc, collection, query, getDocs } from "firebase/firestore";
 import infoCardsData from "../backend/infoCards.json";
 import footerCategoriesData from "../backend/footerCategories.json";
+import listings from "../backend/listings.json";
 import { db } from "./FirebaseInit";
 
 /*
@@ -223,4 +224,99 @@ const fetchFooterLinks = async (): Promise<FooterCategory | null> => {
   return footerLinks;
 };
 
-export { infoCardExists, fetchInfoCards, footerCollectionExists, fetchFooterLinks};
+/*
+  LISTING DATA:
+    listingDataExists() - Check if collection exists
+    fetchListingData() - Get all property data for search term
+*/
+
+interface ListingData {
+  logo: string;
+  logobackground: string;
+  agentname: string;
+  agentnamecolor: string;
+  portrait: string;
+  images: string[];
+  price: string;
+  address: string;
+  bed: string;
+  bath: string;
+  car: string;
+  square: string;
+  type: string;
+};
+
+const listingData: ListingData[] = listings;
+
+const listingDataExists = async () => {
+  const listingCollectionRef = collection(db, "listings");
+  const querySnapshot = await getDocs(listingCollectionRef);
+
+  if (querySnapshot.empty) {
+    console.log("No listing collection found, adding data...");
+
+  for (const listing of listingData) {
+    const listingDocumentData = {
+      logo: listing.logo,
+      logobackground: listing.logobackground,
+      agentname: listing.agentname,
+      agentnamecolor: listing.agentnamecolor,
+      portrait: listing.portrait,
+      images: listing.images,
+      price: listing.price,
+      address: listing.address,
+      bed: listing.bed,
+      bath: listing.bath,
+      car: listing.car,
+      square: listing.square,
+      type: listing.type,
+    };
+
+    await addDoc(listingCollectionRef, listingDocumentData);
+  }
+    console.log("Listing data added to Firestore!");
+  }
+  else
+  {
+    console.log("Listing data exists, no new data added.");
+  }
+};
+
+const fetchListingData = async (): Promise<ListingData[] | null> => {
+  const listingCollectionRef = collection(db, "listings");
+  const querySnapshot = await getDocs(listingCollectionRef);
+
+  if (querySnapshot.empty) {
+      console.log("No listing data found.");
+      return null;
+  }
+
+  const listings: ListingData[] = [];
+
+  querySnapshot.forEach((listingDoc) => {
+    const listingDataRetrieved = listingDoc.data();
+
+    const listingData: ListingData = {
+      logo: listingDataRetrieved.logo || "",
+      logobackground: listingDataRetrieved.logobackground || "",
+      agentname: listingDataRetrieved.agentname || "",
+      agentnamecolor: listingDataRetrieved.agentnamecolor || "",
+      portrait: listingDataRetrieved.portrait || "",
+      images: listingDataRetrieved.images || [],
+      price: listingDataRetrieved.price || "",
+      address: listingDataRetrieved.address || "",
+      bed: listingDataRetrieved.bed || "",
+      bath: listingDataRetrieved.bath || "",
+      car: listingDataRetrieved.car || "",
+      square: listingDataRetrieved.square || "",
+      type: listingDataRetrieved.type || "",
+    };
+
+    listings.push(listingData);
+  });
+
+  console.log("Fetched listing data: ", listings);
+  return listings;
+};
+
+export { infoCardExists, fetchInfoCards, footerCollectionExists, fetchFooterLinks, listingDataExists, fetchListingData};

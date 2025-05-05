@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Search from "./Search.tsx";
-import SearchIcon from "../assets/SearchIcon.tsx";
 
 interface HeroProps{
     $backgroundImage: string;

@@ -3,6 +3,7 @@ import Button from "./Button";
 import InfoCard from "./InfoCard";
 import { StyledInfoCardContainer } from "./InfoCardContainer.styles";
 import { fetchInfoCards } from "../backend/FirebaseService";
+import Footer from "./Footer";
 
 interface InfoCardContainerProps{
     heading: string;
