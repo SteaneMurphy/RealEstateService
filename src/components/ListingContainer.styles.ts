@@ -169,6 +169,7 @@ export const StyledListingImage = styled.div
         justify-content: space-between;
         width: 100%;
         padding: 10px;
+        z-index: 100;
 
         svg {
             pointer-events: auto;

@@ -33,7 +33,8 @@ export const StyledInfoCard = styled.div
     flex-direction: column;
     border: 1px solid #e5e3e8;
     border-radius: 15px;
-    width: 100%;
+    width: 336px;
+    height: 380px;
     padding: 20px;
     margin-top: 20px;
     cursor: pointer;

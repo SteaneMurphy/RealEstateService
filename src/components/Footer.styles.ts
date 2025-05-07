@@ -16,7 +16,7 @@ export const StyledFooter = styled.div
     {
         display: flex;
         justify-content: flex-start;
-        width: 55%;
+        width: 1000px;
         margin-top: 20px;
     }
 
@@ -32,7 +32,7 @@ export const StyledFooter = styled.div
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        width: 55%;
+        width: 1000px;
         margin-top: 20px;
     }
 `;

@@ -26,7 +26,7 @@ function App() {
           <Route path="/buy" element={<PropertyListing />} />
           <Route path="/rent" element={<PropertyListing />} />
           <Route path="/sold" element={<PropertyListing />} />
-          <Route path="/listing" element={<Listing />} />
+          <Route path="/listing/:slug" element={<Listing />} />
         </Routes>
       </div>
     </Router>

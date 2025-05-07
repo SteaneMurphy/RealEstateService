@@ -1,15 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { StyledLink } from "./Link.styles";
 
 interface LinkProps{
     linkName: string;
 };
 
-const Link: React.FC<LinkProps> = ({ linkName }) => {
+const CustomLink: React.FC<LinkProps> = ({ linkName }) => {
 
     return (
-        <StyledLink>{linkName}</StyledLink>
+        <Link to="/">
+            <StyledLink>{linkName}</StyledLink>
+        </Link>
     );
 };
 
-export default Link;
+export default CustomLink;

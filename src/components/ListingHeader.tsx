@@ -14,13 +14,13 @@ const ListingHeader = ({ logo, agentname, $agentnamecolor, portrait }: ListingHe
         <StyledHeadingContainer $agentnamecolor={$agentnamecolor}>
             <div className="listingLogo">
                 <div>
-                    <img src={logo}></img>
+                    <img src={logo} />
                 </div>
             </div>
             <div className="agentHeader">
                 <span className="agentName">{agentname}</span>
                 <div className="agentPortraitContainer">
-                    <img className="agentPortrait" src={portrait}></img>
+                    <img className="agentPortrait" src={portrait} />
                 </div>
             </div>
         </StyledHeadingContainer>
