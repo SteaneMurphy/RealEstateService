@@ -8,12 +8,29 @@ interface SearchProps{
     className?: string;
 };
 
+/*
+    Placeholder strings depending on which button has been clicked
+*/
 const placeholderText: string[] = [
     "Search suburb, postcode or state",
     "Search by address",
     "Search suburb, postcode or region",
 ];
 
+/*
+    This component is the main searchbar component. It contains buttons that change
+    the search type:
+        - buying
+        - renting
+        - recently sold
+        - search by address
+        - search by agent
+    
+    The component stores the placeholder string as state using the 'useState' hook.
+    When a particular category button is clicked, this state is updated with its
+    appropriate string and the component re-renders to display the new placeholder string
+    in the search bar.
+*/
 const Search = ({ className }: SearchProps) => {
     const [currentPlaceholder, setCurrentPlaceholder] = useState(placeholderText[0]);
 
@@ -21,6 +38,16 @@ const Search = ({ className }: SearchProps) => {
         setCurrentPlaceholder(placeholder);
     };
 
+    /*
+        Before learning about React-Router, I used the 'navigate' and 'useNavigate' functions built into React.
+        In this case, whenever the user clicked the search button, the Route in the 'App' component would trigger.
+        The potential routes that this button could trigger are:
+            - /buy
+            - /rent
+            - /sold
+        This was to mimic each category depending on what search button was in state at the time. All buttons currently
+        return the same search results and it was only used to differeniate the button states.
+    */
     const navigate = useNavigate();
     const searchOnType = (type: string) =>
     {

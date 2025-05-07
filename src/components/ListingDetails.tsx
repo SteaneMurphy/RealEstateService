@@ -15,6 +15,13 @@ interface ListingDetailsProps
     type: string;
 };
 
+/*
+    Listing sub-component. Displays information sent to it from its parent component into the 
+    relevant elements.
+
+    This component calls SVG icon sub-components and passes width/height to them as props.
+*/
+
 const ListingDetails = ({ price, address, suburb, state, postcode, bed, bath, car, square, type }: ListingDetailsProps) => {
 
     return (

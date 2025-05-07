@@ -8,6 +8,11 @@ interface ListingHeaderProps
     portrait: string;
 };
 
+/*
+    Listing sub-component. Passes props to its styled component and displays information
+    sent from its parent in the relevant elements
+*/
+
 const ListingHeader = ({ logo, agentname, $agentnamecolor, portrait }: ListingHeaderProps) => {
 
     return (

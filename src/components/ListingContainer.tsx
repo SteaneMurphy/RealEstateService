@@ -27,6 +27,20 @@ interface ListingProps
     description: string;
 };
 
+/*
+  This component is the main container for a single property listing. It is a wrapper
+  for a collection of sub-components. The entire component is wrapped in a Link element
+  from the React-Router. When a user clicks on this component, it calls the relevant page/view
+  as per the associated route stored in the App component.
+
+  In this case, it is the '/listing' route, which is dynamic. The precreated slug is sent to the route
+  so that each property listing has a unique url that defines its location in the application.
+
+  The slug is a combination of the property variables to ensure its uniqueness including its document id
+  from the firestore database. This may not be very secure to provide such IDs but was used for quick 
+  testing purposes.
+*/
+
 const ListingContainer: React.FC<ListingProps> = ({
     id, 
     logo, 

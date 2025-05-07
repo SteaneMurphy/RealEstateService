@@ -12,7 +12,10 @@ const Footer = () => {
         setFooterCategory(category);
     };
 
-    //on initial render
+    /*
+        Identical logic to the 'InfoCard' component. Please refer to this component for a full description
+        of the logic.
+    */
     useEffect(() => {
         const getFooterLinks = async () => {
             const results = await fetchFooterLinks();
