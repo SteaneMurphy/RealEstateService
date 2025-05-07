@@ -13,6 +13,14 @@ interface StyledButton{
     $borderUnderline?: boolean;
 };
 
+/*
+    This styled component take in variables sent from its
+    parent. These variables are used to dynamically change
+    things like the size or colour of the component. The
+    exact values are decided when pulling in the component
+    in another script.
+*/
+
 export const StyledButton = styled.div<StyledButton>
 `
     display: flex;

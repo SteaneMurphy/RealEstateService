@@ -4,6 +4,15 @@ import CustomLink from "./Link.tsx";
 import { NavbarContainer } from "./Navbar.styles.ts";
 import { Link } from "react-router-dom";
 
+/*
+    This is the main navigation bar component visible at the top of the page.
+    It contains a 'CustomLink' component that was used for styling purposes, underneath this component
+    uses the 'Link' component from React-Router. All links return to the home page at this point.
+
+    An example of the 'Link' component can be seen below, the 'to' parameter provides the path to the 
+    route stored in the 'App' component, which will then display the associated page/view. In this case, it
+    is the home page ("/").
+*/
 
 const Navbar = () => {
 

@@ -7,6 +7,12 @@ interface InfoCardProps{
     image: string;
 };
 
+/*
+    Displays the information sent to it via props from its parent
+    into the relvent elements. This is the property image, and some
+    text elements.
+*/
+
 const InfoCard = ({ heading, text, link, image }: InfoCardProps) => {
 
     return (

@@ -6,6 +6,10 @@ interface LinkProps{
     linkName: string;
 };
 
+/*
+    Links to the homepage using React-Router and the Link component.
+*/
+
 const CustomLink: React.FC<LinkProps> = ({ linkName }) => {
 
     return (

@@ -1,6 +1,16 @@
 import React from "react";
 import { StyledButton } from "./Button.styles";
 
+/*
+    This is a button component. All aspects of the component were
+    designed to be reusable across the application wherever a button was
+    needed. Therefore the component variables are sent into a styled
+    component which adjusts its specific css values.
+
+    The 'onClick' function is also dynamic and the specific function
+    can be decided when pulling in the button component in a parent component.
+*/
+
 interface ButtonProps{
     buttonName: string;
     backgroundColor?: string;

@@ -15,6 +15,10 @@ interface Props
     type: string;
 } 
 
+/*
+    Details container for the single property view. All information is passed as props from its parent component.
+    This information is then displayed into its relevant elements.
+*/
 const ExpandedPropertyDetailsContainer = ({ address, suburb, state, postcode, bed, bath, car, square, price, type }: Props) => {
 
   return (

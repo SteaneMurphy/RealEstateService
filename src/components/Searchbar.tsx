@@ -5,6 +5,13 @@ type InputPlaceholder = {
     placeholder: string;
 };
 
+/*
+    Searchbar main component. Takes in styled component variables
+    for width and height, as well as a string value for the 
+    placeholder text. This component is a wrappper for its
+    sub-components which contain the logic.
+*/
+
 const Searchbar = ({ placeholder }: InputPlaceholder) => {
 
     return (
