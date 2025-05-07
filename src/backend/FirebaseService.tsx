@@ -74,7 +74,7 @@ const fetchInfoCards = async (): Promise<InfoCards | null> => {
 
   if (querySnapshot.empty) {
       console.log("No info cards found.");
-      return null;  // No info cards exist
+      return null;
   }
 
   const infoCards: InfoCards = {
@@ -231,6 +231,7 @@ const fetchFooterLinks = async (): Promise<FooterCategory | null> => {
 */
 
 interface ListingData {
+  id?: string;
   logo: string;
   logobackground: string;
   agentname: string;
@@ -239,11 +240,16 @@ interface ListingData {
   images: string[];
   price: string;
   address: string;
+  suburb: string;
+  state: string;
+  postcode: string;
   bed: string;
   bath: string;
   car: string;
   square: string;
   type: string;
+  descriptiontitle: string;
+  description: string;
 };
 
 const listingData: ListingData[] = listings;
@@ -265,11 +271,16 @@ const listingDataExists = async () => {
       images: listing.images,
       price: listing.price,
       address: listing.address,
+      suburb: listing.suburb,
+      state: listing.state,
+      postcode: listing.postcode,
       bed: listing.bed,
       bath: listing.bath,
       car: listing.car,
       square: listing.square,
       type: listing.type,
+      descriptiontitle: listing.descriptiontitle,
+      description: listing.description
     };
 
     await addDoc(listingCollectionRef, listingDocumentData);
@@ -297,6 +308,7 @@ const fetchListingData = async (): Promise<ListingData[] | null> => {
     const listingDataRetrieved = listingDoc.data();
 
     const listingData: ListingData = {
+      id: listingDoc.id,
       logo: listingDataRetrieved.logo || "",
       logobackground: listingDataRetrieved.logobackground || "",
       agentname: listingDataRetrieved.agentname || "",
@@ -305,11 +317,16 @@ const fetchListingData = async (): Promise<ListingData[] | null> => {
       images: listingDataRetrieved.images || [],
       price: listingDataRetrieved.price || "",
       address: listingDataRetrieved.address || "",
+      suburb: listingDataRetrieved.suburb || "",
+      state: listingDataRetrieved.state || "",
+      postcode: listingDataRetrieved.postcode || "",
       bed: listingDataRetrieved.bed || "",
       bath: listingDataRetrieved.bath || "",
       car: listingDataRetrieved.car || "",
       square: listingDataRetrieved.square || "",
       type: listingDataRetrieved.type || "",
+      descriptiontitle: listingDataRetrieved.descriptiontitle || "",
+      description: listingDataRetrieved.description || ""
     };
 
     listings.push(listingData);

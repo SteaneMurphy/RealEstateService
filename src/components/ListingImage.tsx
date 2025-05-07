@@ -27,10 +27,25 @@ const ListingImage = ({ images }: ListingImageProps) => {
     return (
         <StyledListingImage>
             <div className="arrows">
-                <ArrowLeftIcon width={50} height={50} fill={"#d1d1d1"} onClick={() => setCurrentImage(getPreviousImage())}/>
-                <ArrowRightIcon width={50} height={50} fill={"#d1d1d1"} onClick={() => setCurrentImage(getNextImage())}/>
+                <ArrowLeftIcon 
+                    width={50} 
+                    height={50} 
+                    fill={"#d1d1d1"} 
+                    onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setCurrentImage(getPreviousImage());}}
+                />
+                <ArrowRightIcon 
+                    width={50} 
+                    height={50} 
+                    fill={"#d1d1d1"} 
+                    onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setCurrentImage(getNextImage());}}/>
             </div>
-            <img src={currentImage}></img>
+            <img src={currentImage} />
         </StyledListingImage>
     );
   };

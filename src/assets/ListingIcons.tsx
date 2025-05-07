@@ -101,7 +101,7 @@ interface ArrowProps
   width: number;
   height: number;
   fill: string;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent<SVGSVGElement, MouseEvent>) => void;
 };
 
 export const ArrowLeftIcon: React.FC<ArrowProps> = ({ width, height, fill, onClick }) => (

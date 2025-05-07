@@ -24,10 +24,6 @@ const Footer = () => {
         getFooterLinks();
     }, []);
 
-    useEffect(() => {
-        console.log(footerLinks);
-    }, [footerLinks]);
-
     return (
         <StyledFooter>
             <div className="footerButtons">

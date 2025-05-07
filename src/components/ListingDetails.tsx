@@ -5,6 +5,9 @@ interface ListingDetailsProps
 {
     price: string;
     address: string;
+    suburb: string;
+    state: string;
+    postcode: string;
     bed: string;
     bath: string;
     car: string;
@@ -12,7 +15,7 @@ interface ListingDetailsProps
     type: string;
 };
 
-const ListingDetails = ({ price, address, bed, bath, car, square, type }: ListingDetailsProps) => {
+const ListingDetails = ({ price, address, suburb, state, postcode, bed, bath, car, square, type }: ListingDetailsProps) => {
 
     return (
         <StyledListingDetails>
@@ -22,7 +25,7 @@ const ListingDetails = ({ price, address, bed, bath, car, square, type }: Listin
                     <StarIcon width={24} height={24} />
                 </div>
             </div>
-            <span className="address">{address}</span>
+            <span className="address">{address}, {suburb}</span>
             <div className="propertyDetails">
                 <div>
                     <BedIcon width={18} height={18} />

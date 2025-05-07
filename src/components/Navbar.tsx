@@ -1,7 +1,8 @@
 import Logo from "../assets/Logo.tsx";
 import Button from "./Button.tsx";
-import Link from "./Link.tsx";
+import CustomLink from "./Link.tsx";
 import { NavbarContainer } from "./Navbar.styles.ts";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -10,16 +11,18 @@ const Navbar = () => {
         <NavbarContainer>
             <div className="subContainer">
                 <div className="logo">
-                    <Logo width={210} height={28} />
+                    <Link to="/">
+                        <Logo width={210} height={28} />
+                    </Link>
                 </div>
-                <Link linkName={"Buy"} />
-                <Link linkName={"Rent"} />
-                <Link linkName={"Sold"} />
-                <Link linkName={"New homes"} />
-                <Link linkName={"Find agents"} />
-                <Link linkName={"Home loans"} />
-                <Link linkName={"News"} />
-                <Link linkName={"Commercial"} />
+                <CustomLink linkName={"Buy"} />
+                <CustomLink linkName={"Rent"} />
+                <CustomLink linkName={"Sold"} />
+                <CustomLink linkName={"New homes"} />
+                <CustomLink linkName={"Find agents"} />
+                <CustomLink linkName={"Home loans"} />
+                <CustomLink linkName={"News"} />
+                <CustomLink linkName={"Commercial"} />
             </div>
             <div className="subContainer">
                 <Button 
